@@ -50,7 +50,7 @@ export default function Timeline() {
         <h2 className="h-heading text-3xl md:text-4xl">Experience</h2>
       </Reveal>
 
-      <div className="mt-6 grid md:grid-cols-3 gap-6">
+      <div className="mt-6 grid md:grid-cols-2 gap-6">
         <div className="md:col-span-2">
           <ol className="relative border-l-4 border-[var(--color-secondary)] pl-6 space-y-6">
             {items.map((it, idx) => (
@@ -75,13 +75,6 @@ export default function Timeline() {
             ))}
           </ol>
         </div>
-        <aside className="rounded-2xl border-2 border-[var(--color-border)] p-4 bg-[var(--color-card)]">
-          <Reveal className="a-fade-in a-slide-right" once>
-            <p className="leading-relaxed">
-              I measure progress in questions asked, experiments tried, and friends made along the way.
-            </p>
-          </Reveal>
-        </aside>
       </div>
     </section>
   )
