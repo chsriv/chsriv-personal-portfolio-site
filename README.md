@@ -14,13 +14,13 @@ Any changes you make to your deployed app will be automatically pushed to this r
 
 Your project is live at:
 
-**[https://vercel.com/srivishnavi-chs-projects/v0-portfolio-website-design](https://vercel.com/srivishnavi-chs-projects/v0-portfolio-website-design)**
+**[https://v0-portfolio-website-design-two-fawn.vercel.app/](https://v0-portfolio-website-design-two-fawn.vercel.app/)**
 
 ## Build your app
 
 Continue building your app on:
 
-**[https://v0.app/chat/projects/yfRoq9XxXwr](https://v0.app/chat/projects/yfRoq9XxXwr)**
+**[https://v0.app/](https://v0.app/)**
 
 ## How It Works
 
