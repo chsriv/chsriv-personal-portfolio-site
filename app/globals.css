@@ -1,0 +1,330 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #faf3e0; /* cream */
+  --foreground: #5c6f47; /* olive */
+  --card: #faf3e0; /* cream */
+  --card-foreground: #5c6f47; /* olive */
+  --popover: #faf3e0; /* cream */
+  --popover-foreground: #5c6f47; /* olive */
+  --primary: #5c6f47; /* olive */
+  --primary-foreground: #faf3e0; /* cream */
+  --secondary: #b8860b; /* mustard */
+  --secondary-foreground: #faf3e0; /* cream */
+  --muted: #f4c430; /* yellow */
+  --muted-foreground: #5c6f47; /* olive */
+  --accent: #f5a623; /* orange */
+  --accent-foreground: #5c6f47; /* olive */
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: #5c6f47; /* olive */
+  --input: #5c6f47; /* olive */
+  --ring: #f5a623; /* orange */
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.145 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.439 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
+}
+
+@theme inline {
+  /* fonts */
+  --font-sans: var(--font-karla);
+  --font-mono: var(--font-karla); /* keep to 2 fonts total */
+  --font-serif: var(--font-heading); /* use for headings */
+
+  /* colors: exactly 5 used overall */
+  /* Cream background */
+  --color-background: var(--background);
+  /* Olive foreground/text */
+  --color-foreground: var(--foreground);
+
+  /* Map shadcn tokens to our palette (no extra colors introduced) */
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  /* Primary = Olive, Secondary = Mustard, Accent = Orange, Muted = Yellow */
+  --color-primary: var(--primary); /* olive */
+  --color-primary-foreground: var(--primary-foreground); /* cream */
+  --color-secondary: var(--secondary); /* mustard */
+  --color-secondary-foreground: var(--secondary-foreground); /* cream */
+  --color-accent: var(--accent); /* orange */
+  --color-accent-foreground: var(--accent-foreground); /* olive */
+  --color-muted: var(--muted); /* yellow */
+  --color-muted-foreground: var(--muted-foreground); /* olive */
+
+  /* Derivatives */
+  --color-destructive: var(--destructive); /* reuse palette (mustard) */
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border); /* olive */
+  --color-input: var(--input); /* olive */
+  --color-ring: var(--ring); /* orange */
+
+  /* keep existing radii */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.hand-underline {
+  box-shadow: inset 0 -0.45em 0 0 #f4c430; /* yellow */
+}
+
+.card-wiggle {
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+.card-wiggle:hover {
+  transform: translateY(-2px) rotate(-0.5deg);
+  box-shadow: 0 8px 0 0 #b8860b; /* mustard shadow edge */
+}
+
+.section {
+  @apply max-w-5xl mx-auto px-6 md:px-8;
+}
+
+.h-heading {
+  @apply font-serif text-balance;
+}
+
+/* add animation keyframes + reveal utilities for fade/slide in/out */
+@keyframes v0-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes v0-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes v0-slide-in-up {
+  from {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes v0-slide-out-down {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+}
+@keyframes v0-slide-in-right {
+  from {
+    transform: translateX(12px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes v0-slide-out-right {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(12px);
+    opacity: 0;
+  }
+}
+@keyframes v0-slide-in-left {
+  from {
+    transform: translateX(-12px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes v0-slide-out-left {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-12px);
+    opacity: 0;
+  }
+}
+
+/* Reveal pattern: toggle .in-view via IntersectionObserver */
+.reveal {
+  opacity: 0;
+  will-change: opacity, transform;
+}
+.reveal.in-view {
+  opacity: 1;
+}
+
+/* Apply animations by semantic helper classes */
+.a-fade-in.reveal.in-view {
+  animation: v0-fade-in 600ms ease both;
+}
+.a-fade-out.reveal:not(.in-view) {
+  animation: v0-fade-out 400ms ease both;
+}
+
+.a-slide-up.reveal.in-view {
+  animation: v0-slide-in-up 650ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.a-slide-down-out.reveal:not(.in-view) {
+  animation: v0-slide-out-down 450ms ease both;
+}
+
+.a-slide-right.reveal.in-view {
+  animation: v0-slide-in-right 650ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.a-slide-right-out.reveal:not(.in-view) {
+  animation: v0-slide-out-right 450ms ease both;
+}
+
+.a-slide-left.reveal.in-view {
+  animation: v0-slide-in-left 650ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.a-slide-left-out.reveal:not(.in-view) {
+  animation: v0-slide-out-left 450ms ease both;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .a-fade-in,
+  .a-fade-out,
+  .a-slide-up,
+  .a-slide-down-out,
+  .a-slide-right,
+  .a-slide-right-out,
+  .a-slide-left,
+  .a-slide-left-out {
+    animation: none !important;
+    transition: none !important;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+.font-signature {
+  font-family: var(--font-homemade), cursive;
+  letter-spacing: 0.2px;
+}
+
+/* add card background variants using the existing 5-color palette */
+.card-cream {
+  background-color: var(--color-card);
+  color: var(--color-card-foreground);
+}
+.card-olive {
+  background-color: var(--color-primary);
+  color: var(--color-primary-foreground);
+}
+.card-mustard {
+  background-color: var(--color-secondary);
+  color: var(--color-secondary-foreground);
+}
+.card-orange {
+  background-color: var(--color-accent);
+  color: var(--color-accent-foreground);
+}
+.card-yellow {
+  background-color: var(--color-muted);
+  color: var(--color-muted-foreground);
+}
+
+/* Optional: soft divider for cozy sections */
+.soft-divider {
+  border-top: 2px dashed var(--color-border);
+  opacity: 0.3;
+}
+
+/* Optional: subtle panel */
+.panel {
+  border-radius: var(--radius-xl);
+  border: 2px solid var(--color-border);
+}
