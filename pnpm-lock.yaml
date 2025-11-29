@@ -135,7 +135,7 @@ importers:
         specifier: 9.8.0
         version: 9.8.0(react@19.2.0)
       react-dom:
-        specifier: ^18
+        specifier: 18.0.0
         version: 18.0.0(react@19.2.0)
       react-hook-form:
         specifier: ^7.60.0
