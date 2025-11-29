@@ -17,13 +17,13 @@ function DynamicHeroCopy() {
 
       <Reveal className="a-fade-in a-slide-up" once>
         <p className="mt-4 text-lg leading-relaxed">
-          Computer Science undergraduate — Full‑stack & AI‑driven solutions · CGPA 9.23/10
+          Computer Science undergraduate — Full‑stack & AI‑driven solutions · CGPA 9.25/10
         </p>
       </Reveal>
 
       <Reveal className="a-fade-in a-slide-up" once>
         <p className="mt-2 leading-relaxed">
-          Hands‑on with Python, React, Node.js, and ML. I build warm, human UIs and ship thoughtfully for real users.
+          Hands‑on with Python, React, and ML. I build warm, human UIs and ship thoughtfully for real users.
         </p>
       </Reveal>
 

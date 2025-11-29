@@ -18,7 +18,7 @@ export default function About() {
         </div>
         <aside className="panel p-4">
           <ul className="list-disc pl-5 space-y-2">
-            <li>Pre‑final year CSE @ GITAM (CGPA 9.23/10)</li>
+            <li>Pre‑final year CSE @ GITAM (CGPA 9.25/10)</li>
             <li>Minor in AI @ IIT Ropar</li>
             <li>Full‑stack, AI/ML, Cybersecurity</li>
             <li>Hackathons & community building</li>

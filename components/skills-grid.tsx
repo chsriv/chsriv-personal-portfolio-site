@@ -1,4 +1,16 @@
-const skills = ["Python", "Java", "Machine Learning", "React", "Node.js", "Cybersecurity"]
+const skills = [
+  "Python",
+  "Java",
+  "Machine Learning",
+  "React",
+  "Product Design",
+  "Cybersecurity",
+  "SQL",
+  "Cloud Computing",
+  "SDLC",
+  "Communication",
+  "Collaboration",
+]
 
 export default function SkillsGrid() {
   return (
