@@ -10,6 +10,7 @@ const skills = [
   "SDLC",
   "Communication",
   "Collaboration",
+  "Version Control",
 ]
 
 export default function SkillsGrid() {
