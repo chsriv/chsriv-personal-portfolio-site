@@ -1,10 +1,10 @@
 const skills = [
   "Python",
   "Java",
-  "Machine Learning",
+  "Prompt Engineering",
   "React",
   "Product Design",
-  "Cybersecurity",
+  "REST APIs",
   "SQL",
   "Cloud Computing",
   "SDLC",

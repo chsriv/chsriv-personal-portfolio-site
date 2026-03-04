@@ -2,44 +2,34 @@ import Reveal from "./reveal"
 
 const items = [
   {
-    title: "Event Management Team — GDG on Campus, GITAM Hyderabad",
-    period: "Sep 2025 – Present · 1 mo",
-    detail:
-      "Creating memorable tech experiences, building vibrant developer communities at GDGC and fostering community connections.",
-  },
-  {
-    title: "Cloud Team — GDG on Campus, GITAM Hyderabad",
-    period: "Sep 2024 – Sep 2025 · 1 yr 1 mo",
-    detail:
-      "Worked on cross-domain projects and events with students who really know their stuff — smart, creative, and cool to work with.",
-  },
-  {
-    title: "Tech Team — HackOps GITAM",
-    period: "Jan 2025 – Present · 9 mo",
-    detail:
-      "Gained cybersecurity fundamentals through TryHackMe, Hack The Box, and OverTheWire — focused on CTFs, Linux, and practical skills.",
+    title: "Scholar — SheFi Season 16",
+    period: "March 2026 – Present",
+    detail: "Mastering end-to-end onchain operations, hardware security, and DeFi protocols on Base & Rootstock, integrated with AI-driven productivity workflows.",
   },
   {
     title: "Member — GitHub Community, GITAM Hyderabad",
     period: "2025 – Present",
-    detail: "",
+    detail: "Contributed to technical execution for EPOCH 3.0, GitHub's flagship event; orchestrated technical workshops and developer community engagement.",
   },
   {
-    title: "Member — COGAAN Club",
-    period: "Sep 2024 – Present · 1 yr 1 mo",
-    detail:
-      "Collaboration is at the heart of everything here, and I’ve loved being part of that. From exciting projects to unforgettable people — it’s all been worth it!",
+    title: "Tech Team — HackOps GITAM",
+    period: "Jan 2025 – Present",
+    detail: "Specializing in cybersecurity fundamentals (Linux, CTFs) via TryHackMe and Hack The Box to build security-first software development habits.",
   },
   {
-    title: "Student Volunteer — National Service Scheme",
-    period: "Aug 2024 – Present · 1 yr 2 mo",
-    detail:
-      "Volunteering through NSS reconnected me with nature, culture, and community — a grounding experience I’m grateful for.",
+    title: "Communications Lead — Homecoming 2025 Team",
+    period: "Nov 2025 – Dec 2025",
+    detail: "Scaled digital communication to 20,000+ alumni, implementing personalized messaging strategies that increased engagement rates by 25%.",
+  },
+  {
+    title: "Cloud Team — GDG on Campus, GITAM Hyderabad",
+    period: "Sep 2024 – Sep 2025", 
+    detail: "Collaborated on cross-domain cloud architecture projects and technical events, focusing on scalable student-led developer solutions.",
   },
   {
     title: "Web3 Fellow — DoraDAO x Girls Who Yap",
-    period: "Jul 2025 – Sep 2025 · 3 mo",
-    detail: "DoraDAO x Girls Who Yap — Web3 Fellowship.",
+    period: "Jul 2025 – Sep 2025",
+    detail: "Completed intensive Web3 fellowship focusing on decentralized governance and blockchain development fundamentals.",
   },
 ]
 
