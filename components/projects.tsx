@@ -10,11 +10,18 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: "BoardMax – Intelligent Search Assistant for Education",
+    blurb:
+      "Architected end-to-end RAG (Retrieval-Augmented Generation) system following Agile principles, translating CBSE educational requirements into scalable microservices architecture with RESTful APIs.",
+    tags: ["Python", "FastAPI", "RAG", "Next.js"],
+    github: "https://github.com/chsriv/BoardMax",
+  },
+  {
     title: "ManabiFun – AI Adventurous English Learning",
     blurb:
-      "Gamified English learning with five themed realms. ML models hit 88.4% weakness detection and 92.8% learning prediction across 258 questions.",
+      "Gamified English learning with five themed realms. ML models hit 88.4% weakness detection and 92.8% learning prediction across question-base.",
     tags: ["Python", "ML", "Data Viz"],
-    github: "https://github.com/chsriv/ManabiFun-English-Adventure",
+    github: "https://github.com/chsriv/ManabiFun",
   },
   {
     title: "JinjjaMood – Reflective Mood Journaling",
