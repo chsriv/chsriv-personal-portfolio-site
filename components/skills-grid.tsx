@@ -3,14 +3,14 @@ const skills = [
   "Java",
   "Prompt Engineering",
   "React",
-  "Git & GitHub",
+  "Product Design",
   "REST APIs",
   "SQL",
-  "Unit Testing",
-  "Docker",
-  "CI/CD",
-  "Agile/Scrum",
-  "Problem Solving",
+  "Cloud Computing",
+  "SDLC",
+  "Communication",
+  "Collaboration",
+  "Version Control",
 ]
 
 export default function SkillsGrid() {

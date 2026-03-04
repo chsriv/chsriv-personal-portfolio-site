@@ -1,11 +1,12 @@
 "use client"
 
+import { cn } from "@/lib/utils"
+
 type Project = {
   title: string
   blurb: string
   tags: string[]
-  link?: string
-  onmouseover github?: string
+  github?: string
 }
 
 const projects: Project[] = [
