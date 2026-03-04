@@ -53,53 +53,59 @@ const projects: Project[] = [
 export default function Projects() {
   return (
     <section id="projects" className="section py-12 md:py-16">
-      <h2 className="h-heading text-3xl md:text-4xl text-[var(--color-foreground)]">Projects</h2>
+      <h2 className="h-heading text-3xl md:text-4xl text-[var(--color-foreground)]">
+        Projects
+      </h2>
 
       <div className="mt-6 grid md:grid-cols-2 gap-6">
         {projects.map((p, idx) => {
           const cardTone =
             idx % 4 === 0
-              ? "bg-[#FFFDD0] text-slate-900" // Cream
+              ? "bg-[#FFFDD0] text-slate-900" 
               : idx % 4 === 1
-                ? "bg-[#FFEB3B] text-slate-900" // Yellow
+                ? "bg-[#FFEB3B] text-slate-900" 
                 : idx % 4 === 2
-                  ? "bg-[#FF9800] text-white"     // Orange (White text for contrast)
-                  : "bg-[#E1AD01] text-white"     // Mustard (White text for contrast)
+                  ? "bg-[#FF9800] text-white"     
+                  : "bg-[#E1AD01] text-white"     
 
           return (
-            <article
+            <a
               key={p.title}
-              className={`card-wiggle rounded-2xl border-2 border-[var(--color-border)] ${cardTone} p-5 cursor-pointer transition-transform hover:scale-105 shadow-sm`}
-              onClick={() => p.github && window.open(p.github, "_blank")}
-              onKeyDown={(e) => {
-                if ((e.key === "Enter" || e.key === " ") && p.github) {
-                  window.open(p.github, "_blank")
-                }
-              }}
-              tabIndex={0}
-              role="button"
-              aria-label={`View project ${p.title}`}
-            >
-              <h3 className="h-heading text-2xl font-bold">{p.title}</h3>
-              <p className="mt-2 leading-relaxed opacity-90 font-medium">{p.blurb}</p>
-              
-              <div className="mt-4 flex flex-wrap gap-2">
-                {p.tags.map((t) => (
-                  <span
-                    key={t}
-                    className="inline-flex items-center rounded-lg border border-black/10 bg-black/5 px-2 py-1 text-xs font-bold uppercase tracking-wider"
-                  >
-                    {t}
-                  </span>
-                ))}
-              </div>
-
-              {p.github && (
-                <div className="mt-5 flex items-center font-bold text-sm underline underline-offset-4">
-                  View on GitHub →
-                </div>
+              href={p.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={cn(
+                "card-wiggle block group rounded-2xl border-2 border-[var(--color-border)] p-6 transition-all hover:scale-[1.02] hover:shadow-xl",
+                cardTone
               )}
-            </article>
+            >
+              <article>
+                <div className="flex justify-between items-start">
+                  <h3 className="h-heading text-2xl font-bold group-hover:underline decoration-2 underline-offset-4">
+                    {p.title}
+                  </h3>
+                  {/* Subtle external link icon that appears on hover */}
+                  <span className="opacity-0 group-hover:opacity-100 transition-opacity text-xl">
+                    ↗
+                  </span>
+                </div>
+                
+                <p className="mt-3 leading-relaxed opacity-90 font-medium text-balance">
+                  {p.blurb}
+                </p>
+                
+                <div className="mt-6 flex flex-wrap gap-2">
+                  {p.tags.map((t) => (
+                    <span
+                      key={t}
+                      className="inline-flex items-center rounded-lg border border-black/10 bg-black/10 px-2.5 py-1 text-xs font-bold uppercase tracking-wide"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              </article>
+            </a>
           )
         })}
       </div>
