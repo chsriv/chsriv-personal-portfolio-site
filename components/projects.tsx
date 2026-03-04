@@ -5,7 +5,7 @@ type Project = {
   blurb: string
   tags: string[]
   link?: string
-  github?: string
+  onmouseover github?: string
 }
 
 const projects: Project[] = [
