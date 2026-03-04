@@ -2,28 +2,28 @@ export default function About() {
   return (
     <section id="about" className="section py-12 md:py-16">
       <div className="max-w-4xl">
-        <h2 className="h-heading text-3xl md:text-4xl mb-6">About</h2>
+        <h2 className="h-heading text-3xl md:text-4xl mb-6">About Me!</h2>
         <div className="grid md:grid-cols-3 gap-8 items-start">
           <div className="md:col-span-2 space-y-5 text-[var(--color-muted-foreground)]">
             <p className="text-xl leading-relaxed font-medium text-[var(--color-foreground)]">
               I am a pre-final year student at GITAM with a heart for software design 
-              and a minor in AI from IIT Ropar.
+              and a Minor in AI from IIT Ropar.
             </p>
             
             <p className="leading-relaxed">
               To me, engineering is as much about the person using the app as it is about the 
               logic running it. I spend my time bridging the gap between high-level 
-              interface design and the **production-grade systems** that make everything feel instant. 
-              Whether I am optimizing **distributed RAG architectures** at **BoardMax** or 
-              hardening security protocols with the **HackOps** team, my goal is always 
+              interface design and the production-grade systems that make everything feel instant. 
+              Whether I am optimizing distributed RAG architectures at BoardMax or 
+              hardening security protocols with the HackOps team, my goal is always 
               the same: shipping software that feels intentional, secure, and helpful.
             </p>
 
             <p className="leading-relaxed">
-              I love the energy of **hackathons** and collaborative building. It is where 
-              I find my rhythm—translating complex requirements into **scalable backend logic** and performant **RESTful microservices**. I thrive in cross-functional teams 
+              I love the energy of hackathons and collaborative building. It is where 
+              I find my rhythm—translating complex requirements into scalable backend logic and performant RESTful microservices. I thrive in cross-functional teams 
               where technical rigor meets the challenge of taking full ownership of the 
-              **end-to-end SDLC**.
+              end-to-end SDLC.
             </p>
 
             <p className="leading-relaxed">
