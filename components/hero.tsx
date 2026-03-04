@@ -9,7 +9,7 @@ function DynamicHeroCopy() {
     <>
       <Reveal className="a-fade-in a-slide-left" once>
         <h1 className="h-heading font-signature text-4xl md:text-5xl leading-tight">
-          {"Hi, I'm "}
+          {"Hello! I'm "}
           {/* Enhanced contrast/color on your name */}
           <span className="hand-underline inline-block text-[var(--color-primary)]">Srivishnavi Chebrolu</span>
           {"."}
