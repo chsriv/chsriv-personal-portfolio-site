@@ -1,6 +1,6 @@
 const skills = [
-  "Java",
   "Python",
+  "Java",
   "Prompt Engineering",
   "React",
   "Git & GitHub",
