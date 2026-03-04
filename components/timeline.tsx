@@ -23,7 +23,7 @@ const items = [
   },
   {
     title: "Cloud Team — GDG on Campus, GITAM Hyderabad",
-    period: "Sep 2024 – Sep 2025",
+    period: "Sep 2024 – Sep 2025", 
     detail: "Collaborated on cross-domain cloud architecture projects and technical events, focusing on scalable student-led developer solutions.",
   },
   {
