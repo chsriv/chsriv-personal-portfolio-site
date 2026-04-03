@@ -5,7 +5,7 @@ export default function Contact() {
       <p className="mt-3 leading-relaxed">Want to build something together or just say hi?</p>
       <div className="mt-6 flex flex-wrap gap-3">
         <a
-          href="mailto:chsrivishnavi@gmail.com"
+          href="mailto:chsrivishnavi2@gmail.com"
           aria-label="Email"
           className="card-wiggle inline-flex items-center rounded-xl border-2 border-[var(--color-border)] bg-[var(--color-secondary)] text-[var(--color-secondary-foreground)] p-3"
         >
