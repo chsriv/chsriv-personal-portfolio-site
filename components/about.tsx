@@ -6,7 +6,7 @@ export default function About() {
         <div className="grid md:grid-cols-3 gap-8 items-start">
           <div className="md:col-span-2 space-y-5 text-[var(--color-muted-foreground)]">
             <p className="text-xl leading-relaxed font-medium text-[var(--color-foreground)]">
-              I am a pre-final year student at GITAM with a heart for software design 
+              I am a pre-final year student at GITAM with a heart for software engineering 
               and a Minor in AI from IIT Ropar.
             </p>
             
@@ -34,7 +34,7 @@ export default function About() {
             </p>
             
             <p className="pt-4 font-semibold text-[var(--color-primary)] opacity-90">
-              Thanks so much for stopping by my corner of the internet.
+              Thanks so much for stopping by my corner of the internet!
             </p>
           </div>
 
