@@ -6,7 +6,7 @@ export default function About() {
         <div className="grid md:grid-cols-3 gap-8 items-start">
           <div className="md:col-span-2 space-y-5 text-[var(--color-muted-foreground)]">
             <p className="text-xl leading-relaxed font-medium text-[var(--color-foreground)]">
-              I am a pre-final year student at GITAM with a heart for software engineering 
+              I am a final year student at GITAM with a heart for software engineering 
               and a Minor in AI from IIT Ropar.
             </p>
             
@@ -45,7 +45,7 @@ export default function About() {
             <ul className="space-y-4 text-sm font-medium text-[var(--color-secondary-foreground)]">
               <li>
                 <span className="block opacity-60 text-[10px] uppercase mb-1">Foundations</span>
-                CSE @ GITAM (9.25 CGPA)
+                CSE @ GITAM (9.29 CGPA)
               </li>
               <li>
                 <span className="block opacity-60 text-[10px] uppercase mb-1">Intelligence</span>
