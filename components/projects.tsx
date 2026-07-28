@@ -44,7 +44,7 @@ const projects: Project[] = [
     github: "https://github.com/chsriv/RackON-by-TeamAviDhrithi",
   },
   {
-    title: "Alumni Association Platform – SIH 2024 (Internal Top 10)",
+    title: "ReUnio: Alumni Association Platform – SIH 2024 (Internal Top 10)",
     blurb: "Connects alumni and students for networking and mentorship. Led UI/UX and integrated backend services.",
     tags: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/chsriv/ReUnio",
