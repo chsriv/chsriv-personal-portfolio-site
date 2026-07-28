@@ -26,7 +26,7 @@ function DynamicHeroCopy() {
       <Reveal className="a-fade-in a-slide-up" once>
         {/* High-impact description featuring your GPA and modern stack */}
         <p className="mt-2 leading-relaxed text-[var(--color-muted-foreground)] max-w-2xl mx-auto md:mx-0">
-          Maintaining a <span className="font-bold text-[var(--color-foreground)]">9.25/10 CGPA</span> while architecting 
+          Maintaining a <span className="font-bold text-[var(--color-foreground)]">9.29/10 CGPA</span> while architecting 
           scalable solutions with Python, React, and LLM integrations. I ship thoughtfully, prioritizing human-centric 
           UIs for real-world impact.
         </p>
